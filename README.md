@@ -1,6 +1,5 @@
 # Built Environment and Preterm Birth in Santiago, Chile (2009–2020)
 
-## 💰 Funding
 
 **Fondecyt Nº 11240322**: Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth.
 
@@ -57,14 +56,13 @@ This section corresponds to **Objective 3** of Fondecyt N°11240322: to investig
 
 ## 📁 Repository Structure
 
----
+```
 PTB_Built_environment/
 ├── 01_Input/          # Datos de ambiente construido y base analítica
 ├── 02_Code/            # Scripts de procesamiento y análisis
 ├── 03_Output/          # Mapas, tablas y figuras
 └── README.md
----
-
+```
 ## ✉️ Contact
 
 For questions about the code or methodology in this section: Isidora Vidal (isidora.vidal@ug.uchile.cl).
@@ -74,7 +72,6 @@ For questions about the code or methodology in this section: Isidora Vidal (isid
 
 # Ambiente Construido y Parto Prematuro en Santiago, Chile (2009–2020)
 
-## 💰 Financiamiento
 
 **Fondecyt Nº 11240322**: Cambio climático y salud urbana: cómo la contaminación del aire, la temperatura y la estructura de la ciudad se relacionan con el parto prematuro.
 
@@ -129,10 +126,10 @@ Esta sección corresponde al **Objetivo 3** del FONDECYT N°11240322: investigar
 
 ## 📁 Estructura del Repositorio
 
----
+```
 PTB_Built_environment/
 ├── 01_Input/ # Datos de ambiente construido y base analítica
 ├── 02_Code/ # Scripts de procesamiento y análisis
 ├── 03_Output/ # Mapas, tablas y figuras
 └── README.md
----
+```
