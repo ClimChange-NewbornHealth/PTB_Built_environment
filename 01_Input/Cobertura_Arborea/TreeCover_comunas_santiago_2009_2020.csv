@@ -1,0 +1,397 @@
+COMUNA,year,treecover
+Puente Alto,2009,4.01
+San Miguel,2009,0.0
+Macul,2009,0.02
+Maipú,2009,1.32
+Providencia,2009,1.59
+San Ramón,2009,0.0
+Ñuñoa,2009,0.02
+Cerrillos,2009,0.01
+La Reina,2009,2.59
+El Bosque,2009,0.0
+Independencia,2009,0.03
+Lo Prado,2009,0.0
+Recoleta,2009,1.17
+Renca,2009,0.02
+Pudahuel,2009,3.39
+Huechuraba,2009,2.66
+La Pintana,2009,0.02
+Quinta Normal,2009,0.01
+La Granja,2009,0.0
+Vitacura,2009,5.25
+Quilicura,2009,0.13
+Santiago,2009,0.24
+Conchalí,2009,0.01
+La Cisterna,2009,0.0
+Estación Central,2009,0.03
+Lo Barnechea,2009,3.25
+Cerro Navia,2009,0.21
+Lo Espejo,2009,0.0
+La Florida,2009,4.23
+San Joaquín,2009,0.0
+Pedro Aguirre Cerda,2009,0.02
+Las Condes,2009,5.47
+Peñalolén,2009,4.75
+Puente Alto,2010,4.01
+San Miguel,2010,0.0
+Macul,2010,0.02
+Maipú,2010,1.29
+Providencia,2010,1.59
+San Ramón,2010,0.0
+Ñuñoa,2010,0.02
+Cerrillos,2010,0.01
+La Reina,2010,2.59
+El Bosque,2010,0.0
+Independencia,2010,0.03
+Lo Prado,2010,0.0
+Recoleta,2010,1.17
+Renca,2010,0.02
+Pudahuel,2010,3.39
+Huechuraba,2010,2.66
+La Pintana,2010,0.02
+Quinta Normal,2010,0.01
+La Granja,2010,0.0
+Vitacura,2010,5.25
+Quilicura,2010,0.13
+Santiago,2010,0.24
+Conchalí,2010,0.01
+La Cisterna,2010,0.0
+Estación Central,2010,0.03
+Lo Barnechea,2010,3.25
+Cerro Navia,2010,0.21
+Lo Espejo,2010,0.0
+La Florida,2010,4.23
+San Joaquín,2010,0.0
+Pedro Aguirre Cerda,2010,0.02
+Las Condes,2010,5.47
+Peñalolén,2010,4.75
+Puente Alto,2011,4.01
+San Miguel,2011,0.0
+Macul,2011,0.02
+Maipú,2011,1.29
+Providencia,2011,1.59
+San Ramón,2011,0.0
+Ñuñoa,2011,0.02
+Cerrillos,2011,0.01
+La Reina,2011,2.59
+El Bosque,2011,0.0
+Independencia,2011,0.03
+Lo Prado,2011,0.0
+Recoleta,2011,1.17
+Renca,2011,0.01
+Pudahuel,2011,3.39
+Huechuraba,2011,2.66
+La Pintana,2011,0.02
+Quinta Normal,2011,0.01
+La Granja,2011,0.0
+Vitacura,2011,5.25
+Quilicura,2011,0.13
+Santiago,2011,0.24
+Conchalí,2011,0.01
+La Cisterna,2011,0.0
+Estación Central,2011,0.03
+Lo Barnechea,2011,3.25
+Cerro Navia,2011,0.21
+Lo Espejo,2011,0.0
+La Florida,2011,4.23
+San Joaquín,2011,0.0
+Pedro Aguirre Cerda,2011,0.02
+Las Condes,2011,5.47
+Peñalolén,2011,4.75
+Puente Alto,2012,4.01
+San Miguel,2012,0.0
+Macul,2012,0.02
+Maipú,2012,1.28
+Providencia,2012,1.59
+San Ramón,2012,0.0
+Ñuñoa,2012,0.02
+Cerrillos,2012,0.01
+La Reina,2012,2.59
+El Bosque,2012,0.0
+Independencia,2012,0.03
+Lo Prado,2012,0.0
+Recoleta,2012,1.17
+Renca,2012,0.01
+Pudahuel,2012,3.37
+Huechuraba,2012,2.66
+La Pintana,2012,0.02
+Quinta Normal,2012,0.01
+La Granja,2012,0.0
+Vitacura,2012,5.25
+Quilicura,2012,0.12
+Santiago,2012,0.24
+Conchalí,2012,0.01
+La Cisterna,2012,0.0
+Estación Central,2012,0.03
+Lo Barnechea,2012,3.25
+Cerro Navia,2012,0.21
+Lo Espejo,2012,0.0
+La Florida,2012,4.23
+San Joaquín,2012,0.0
+Pedro Aguirre Cerda,2012,0.02
+Las Condes,2012,5.47
+Peñalolén,2012,4.75
+Puente Alto,2013,4.01
+San Miguel,2013,0.0
+Macul,2013,0.02
+Maipú,2013,1.28
+Providencia,2013,1.59
+San Ramón,2013,0.0
+Ñuñoa,2013,0.02
+Cerrillos,2013,0.01
+La Reina,2013,2.59
+El Bosque,2013,0.0
+Independencia,2013,0.03
+Lo Prado,2013,0.0
+Recoleta,2013,1.17
+Renca,2013,0.01
+Pudahuel,2013,3.37
+Huechuraba,2013,2.66
+La Pintana,2013,0.02
+Quinta Normal,2013,0.01
+La Granja,2013,0.0
+Vitacura,2013,5.25
+Quilicura,2013,0.12
+Santiago,2013,0.24
+Conchalí,2013,0.01
+La Cisterna,2013,0.0
+Estación Central,2013,0.03
+Lo Barnechea,2013,3.25
+Cerro Navia,2013,0.21
+Lo Espejo,2013,0.0
+La Florida,2013,4.23
+San Joaquín,2013,0.0
+Pedro Aguirre Cerda,2013,0.02
+Las Condes,2013,5.47
+Peñalolén,2013,4.75
+Puente Alto,2014,3.98
+San Miguel,2014,0.0
+Macul,2014,0.02
+Maipú,2014,1.28
+Providencia,2014,1.59
+San Ramón,2014,0.0
+Ñuñoa,2014,0.02
+Cerrillos,2014,0.01
+La Reina,2014,2.59
+El Bosque,2014,0.0
+Independencia,2014,0.03
+Lo Prado,2014,0.0
+Recoleta,2014,1.17
+Renca,2014,0.01
+Pudahuel,2014,3.37
+Huechuraba,2014,2.66
+La Pintana,2014,0.02
+Quinta Normal,2014,0.01
+La Granja,2014,0.0
+Vitacura,2014,5.25
+Quilicura,2014,0.12
+Santiago,2014,0.24
+Conchalí,2014,0.01
+La Cisterna,2014,0.0
+Estación Central,2014,0.03
+Lo Barnechea,2014,3.25
+Cerro Navia,2014,0.21
+Lo Espejo,2014,0.0
+La Florida,2014,4.23
+San Joaquín,2014,0.0
+Pedro Aguirre Cerda,2014,0.02
+Las Condes,2014,5.47
+Peñalolén,2014,4.75
+Puente Alto,2015,3.98
+San Miguel,2015,0.0
+Macul,2015,0.02
+Maipú,2015,1.28
+Providencia,2015,1.59
+San Ramón,2015,0.0
+Ñuñoa,2015,0.02
+Cerrillos,2015,0.01
+La Reina,2015,2.59
+El Bosque,2015,0.0
+Independencia,2015,0.03
+Lo Prado,2015,0.0
+Recoleta,2015,1.17
+Renca,2015,0.01
+Pudahuel,2015,3.37
+Huechuraba,2015,2.66
+La Pintana,2015,0.02
+Quinta Normal,2015,0.01
+La Granja,2015,0.0
+Vitacura,2015,5.25
+Quilicura,2015,0.12
+Santiago,2015,0.24
+Conchalí,2015,0.01
+La Cisterna,2015,0.0
+Estación Central,2015,0.03
+Lo Barnechea,2015,3.25
+Cerro Navia,2015,0.21
+Lo Espejo,2015,0.0
+La Florida,2015,4.23
+San Joaquín,2015,0.0
+Pedro Aguirre Cerda,2015,0.02
+Las Condes,2015,5.47
+Peñalolén,2015,4.75
+Puente Alto,2016,3.98
+San Miguel,2016,0.0
+Macul,2016,0.02
+Maipú,2016,1.28
+Providencia,2016,1.59
+San Ramón,2016,0.0
+Ñuñoa,2016,0.02
+Cerrillos,2016,0.01
+La Reina,2016,2.59
+El Bosque,2016,0.0
+Independencia,2016,0.03
+Lo Prado,2016,0.0
+Recoleta,2016,1.17
+Renca,2016,0.01
+Pudahuel,2016,3.37
+Huechuraba,2016,2.66
+La Pintana,2016,0.02
+Quinta Normal,2016,0.01
+La Granja,2016,0.0
+Vitacura,2016,5.25
+Quilicura,2016,0.12
+Santiago,2016,0.24
+Conchalí,2016,0.01
+La Cisterna,2016,0.0
+Estación Central,2016,0.03
+Lo Barnechea,2016,3.25
+Cerro Navia,2016,0.21
+Lo Espejo,2016,0.0
+La Florida,2016,4.23
+San Joaquín,2016,0.0
+Pedro Aguirre Cerda,2016,0.02
+Las Condes,2016,5.47
+Peñalolén,2016,4.75
+Puente Alto,2017,3.98
+San Miguel,2017,0.0
+Macul,2017,0.02
+Maipú,2017,1.28
+Providencia,2017,1.59
+San Ramón,2017,0.0
+Ñuñoa,2017,0.02
+Cerrillos,2017,0.01
+La Reina,2017,2.59
+El Bosque,2017,0.0
+Independencia,2017,0.03
+Lo Prado,2017,0.0
+Recoleta,2017,1.17
+Renca,2017,0.01
+Pudahuel,2017,3.37
+Huechuraba,2017,2.66
+La Pintana,2017,0.02
+Quinta Normal,2017,0.01
+La Granja,2017,0.0
+Vitacura,2017,5.25
+Quilicura,2017,0.12
+Santiago,2017,0.24
+Conchalí,2017,0.01
+La Cisterna,2017,0.0
+Estación Central,2017,0.03
+Lo Barnechea,2017,3.25
+Cerro Navia,2017,0.21
+Lo Espejo,2017,0.0
+La Florida,2017,4.23
+San Joaquín,2017,0.0
+Pedro Aguirre Cerda,2017,0.02
+Las Condes,2017,5.47
+Peñalolén,2017,4.75
+Puente Alto,2018,3.98
+San Miguel,2018,0.0
+Macul,2018,0.02
+Maipú,2018,1.28
+Providencia,2018,1.59
+San Ramón,2018,0.0
+Ñuñoa,2018,0.02
+Cerrillos,2018,0.01
+La Reina,2018,2.59
+El Bosque,2018,0.0
+Independencia,2018,0.03
+Lo Prado,2018,0.0
+Recoleta,2018,1.17
+Renca,2018,0.01
+Pudahuel,2018,3.37
+Huechuraba,2018,2.66
+La Pintana,2018,0.02
+Quinta Normal,2018,0.01
+La Granja,2018,0.0
+Vitacura,2018,5.25
+Quilicura,2018,0.12
+Santiago,2018,0.24
+Conchalí,2018,0.01
+La Cisterna,2018,0.0
+Estación Central,2018,0.03
+Lo Barnechea,2018,3.25
+Cerro Navia,2018,0.21
+Lo Espejo,2018,0.0
+La Florida,2018,4.23
+San Joaquín,2018,0.0
+Pedro Aguirre Cerda,2018,0.02
+Las Condes,2018,5.47
+Peñalolén,2018,4.75
+Puente Alto,2019,3.98
+San Miguel,2019,0.0
+Macul,2019,0.02
+Maipú,2019,1.28
+Providencia,2019,1.59
+San Ramón,2019,0.0
+Ñuñoa,2019,0.02
+Cerrillos,2019,0.01
+La Reina,2019,2.59
+El Bosque,2019,0.0
+Independencia,2019,0.03
+Lo Prado,2019,0.0
+Recoleta,2019,1.17
+Renca,2019,0.01
+Pudahuel,2019,3.13
+Huechuraba,2019,2.66
+La Pintana,2019,0.02
+Quinta Normal,2019,0.01
+La Granja,2019,0.0
+Vitacura,2019,5.25
+Quilicura,2019,0.12
+Santiago,2019,0.24
+Conchalí,2019,0.01
+La Cisterna,2019,0.0
+Estación Central,2019,0.03
+Lo Barnechea,2019,3.25
+Cerro Navia,2019,0.21
+Lo Espejo,2019,0.0
+La Florida,2019,4.23
+San Joaquín,2019,0.0
+Pedro Aguirre Cerda,2019,0.02
+Las Condes,2019,5.47
+Peñalolén,2019,4.75
+Puente Alto,2020,3.96
+San Miguel,2020,0.0
+Macul,2020,0.02
+Maipú,2020,1.28
+Providencia,2020,1.59
+San Ramón,2020,0.0
+Ñuñoa,2020,0.02
+Cerrillos,2020,0.01
+La Reina,2020,2.59
+El Bosque,2020,0.0
+Independencia,2020,0.03
+Lo Prado,2020,0.0
+Recoleta,2020,1.17
+Renca,2020,0.01
+Pudahuel,2020,3.13
+Huechuraba,2020,2.66
+La Pintana,2020,0.02
+Quinta Normal,2020,0.01
+La Granja,2020,0.0
+Vitacura,2020,5.24
+Quilicura,2020,0.12
+Santiago,2020,0.24
+Conchalí,2020,0.01
+La Cisterna,2020,0.0
+Estación Central,2020,0.03
+Lo Barnechea,2020,3.25
+Cerro Navia,2020,0.21
+Lo Espejo,2020,0.0
+La Florida,2020,4.23
+San Joaquín,2020,0.0
+Pedro Aguirre Cerda,2020,0.02
+Las Condes,2020,5.47
+Peñalolén,2020,4.75
