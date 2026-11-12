@@ -1,5 +1,10 @@
+<a name="english"></a>
+
 # Built Environment as an Effect Modifier of the Association Between Air Pollution, Temperature, and Preterm Birth in Santiago, Chile
 
+[![GitHub Repo stars](https://img.shields.io/github/stars/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment) [![GitHub watchers](https://img.shields.io/github/watchers/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment) [![GitHub forks](https://img.shields.io/github/forks/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment) [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment/commits/main) [![GitHub contributors](https://img.shields.io/github/contributors/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment/graphs/contributors) [![GitHub last commit](https://img.shields.io/github/last-commit/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment/commits/main) [![GitHub language count](https://img.shields.io/github/languages/count/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment) [![GitHub top language](https://img.shields.io/github/languages/top/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment) [![GitHub License](https://img.shields.io/github/license/ClimChange-NewbornHealth/PTB_Built_environment)](LICENSE) [![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ClimChange-NewbornHealth/PTB_Built_environment)](https://github.com/ClimChange-NewbornHealth/PTB_Built_environment)
+
+🇪🇸 [Versión en español](#espanol)
 
 ## 💰 Funding
 
@@ -15,7 +20,10 @@
 
 📫 **José Daniel Conejeros** ([jdconejeros@uc.cl](mailto:jdconejeros@uc.cl)) - **Research Collaborator**
 
+For questions about the code or methodology in this section: Isidora Vidal (isidora.vidal@ug.uchile.cl).
+
 ---
+
 ## 📝 Background
 
 Exposure to heat and air pollution during pregnancy has been linked to preterm birth. Whether the urban environment in which a pregnant person lives modifies these associations remains poorly understood in Latin American cities.
@@ -32,10 +40,29 @@ Cox proportional hazards models in 713,918 births (2010–2020), with exposure a
 
 In births of the relevant season, greater vegetation weakened and more built surface strengthened the association between exposure and preterm birth, mainly for PM2.5 and NO2. The results are preliminary and exploratory.
 
+## 📂 Data Access
+
+The analysis data of this project is the **urban environment dataset (Product 1)**: 33 municipalities × 2009–2020, with the variables described in the codebook. It is included in this repository:
+
+- `01_Input/Producto1/producto1_entorno_urbano.csv`: urban environment dataset.
+- `01_Input/Producto1/diccionario_variables.csv`: data dictionary (source, coverage, unit and notes of each variable).
+
+**What can be run with the included data**
+
+| Goal | Scripts to run |
+|---|---|
+| Reproduce the descriptive maps and figures | `13_Producto3_mapas.R`, `15_Producto3_graficos.R` |
+| Rebuild Product 1 from its source files | `01` to `09` (see the execution order) |
+
+**Also included in `01_Input`:** Earth Engine exports (`NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`), the shapefiles read by the scripts (commune boundaries, parks 2009, 2013 and 2019, health facilities 2019 and municipal land-use plans of the 33 communes) and population projections (`INE_población`).
+
+**Not included**
+- Individual birth records and daily temperature and air pollution data. Scripts 10, 11, 16 and 18 need them and cannot be run from this repository.
+- OpenStreetMap roads (too large for GitHub). Download `chile-latest-free.shp` from [Geofabrik](https://download.geofabrik.de) and place `gis_osm_roads_free_1.*` in `01_Input/Shapefiles/OSM/`. The result, already computed, is in `Producto1/vias_principales_santiago_33.csv`.
+
 ## 📊 Results
 
 The main results, with numbered figures and tables and explanatory notes, are in [`03_Output`](03_Output/README.md): Figures 1–3 (descriptive maps of surface temperature, vegetation and impervious surface) and Tables 1–4 (Cox models for the whole pregnancy).
-
 
 ## 🌆 What is the Built Environment?
 
@@ -60,9 +87,6 @@ As an example, the maps below illustrate two dimensions of the built environment
 
 **Vegetation Cover Change (NDVI), 2009–2020**
 ![NDVI comparison](03_Output/Maps/mapa_ndvi_comparacion_2009_2020.png)
-
-
----
 
 ## 📁 Repository Structure
 
@@ -116,25 +140,6 @@ All paths are relative to the project root. Open the `.Rproj` file in RStudio an
 | `16_Modelo_analisis_modificacion_efecto` | Cox models, last gestational week | Product 2 + daily temperature and pollution data |
 | `18_Modelo_analisis_centrado` | Cox models, whole pregnancy, centered exposure | Product 2 + daily temperature and pollution data |
 
-## 📂 Data Access
-
-The analysis data of this project is the **urban environment dataset (Product 1)**: 33 municipalities × 2009–2020, with the variables described in the codebook. It is included in this repository:
-
-- `01_Input/Producto1/producto1_entorno_urbano.csv`: urban environment dataset.
-- `01_Input/Producto1/diccionario_variables.csv`: data dictionary (source, coverage, unit and notes of each variable).
-
-**What can be run with the included data**
-
-| Goal | Scripts to run |
-|---|---|
-| Reproduce the descriptive maps and figures | `13_Producto3_mapas.R`, `15_Producto3_graficos.R` |
-| Rebuild Product 1 from its source files | `01` to `09` (see the execution order) |
-
-**Also included in `01_Input`:** Earth Engine exports (`NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`), the shapefiles read by the scripts (commune boundaries, parks 2009, 2013 and 2019, health facilities 2019 and municipal land-use plans of the 33 communes) and population projections (`INE_población`).
-
-**Not included**
-- OpenStreetMap roads (too large for GitHub). Download `chile-latest-free.shp` from [Geofabrik](https://download.geofabrik.de) and place `gis_osm_roads_free_1.*` in `01_Input/Shapefiles/OSM/`. The result, already computed, is in `Producto1/vias_principales_santiago_33.csv`.
-
 ## ⚙️ Requirements
 
 R 4.4.1. Packages: `dplyr`, `readr`, `readxl`, `tidyr`, `tibble`, `purrr`, `stringr`, `sf`, `ggplot2`, `ggspatial`, `patchwork`, `gridExtra`, `gt`, `survival`, `slider`, `openxlsx`.
@@ -157,10 +162,6 @@ The full description of every variable (source, temporal coverage, unit, notes) 
 | Health access | `dist_salud_km`, `n_establecimientos_salud` | 2019 |
 | Parks | `area_parques_ha`, `pct_parques` | 2009, 2013, 2019 (not comparable across years) |
 
-## ✉️ Contact
-
-For questions about the code or methodology in this section: Isidora Vidal (isidora.vidal@ug.uchile.cl).
-
 ## 📄 License
 
 MIT License. See [LICENSE](LICENSE).
@@ -168,7 +169,11 @@ MIT License. See [LICENSE](LICENSE).
 ---
 ---
 
+<a name="espanol"></a>
+
 # El Ambiente Construido como Modificador de la Asociación entre Contaminación del Aire, Temperatura y Parto Prematuro en Santiago, Chile
+
+🇬🇧 [English version](#english)
 
 ## 💰 Financiamiento
 
@@ -184,7 +189,10 @@ MIT License. See [LICENSE](LICENSE).
 
 📫 **José Daniel Conejeros** ([jdconejeros@uc.cl](mailto:jdconejeros@uc.cl)) - **Colaborador de Investigación**
 
+Para consultas sobre el código o la metodología de esta sección: Isidora Vidal (isidora.vidal@ug.uchile.cl).
+
 ---
+
 ## 📝 Antecedentes
 
 La exposición a calor y a contaminación del aire durante el embarazo se ha asociado al parto prematuro. Aún se conoce poco si el entorno urbano en que vive la gestante modifica estas asociaciones en ciudades de América Latina.
@@ -201,10 +209,29 @@ Modelos de riesgos proporcionales de Cox en 713.918 nacimientos (2010–2020), c
 
 En los nacimientos de la estación relevante, una mayor vegetación debilitó y una mayor superficie construida reforzó la asociación entre la exposición y el parto prematuro, sobre todo para PM2.5 y NO2. Los resultados son preliminares y exploratorios.
 
+## 📂 Acceso a los Datos
+
+Los datos de análisis de este proyecto son la **base de entorno urbano (Producto 1)**: 33 comunas × 2009–2020, con las variables descritas en el libro de códigos. Está incluida en este repositorio:
+
+- `01_Input/Producto1/producto1_entorno_urbano.csv`: base de entorno urbano.
+- `01_Input/Producto1/diccionario_variables.csv`: diccionario de variables (fuente, cobertura, unidad y notas de cada una).
+
+**Qué se puede ejecutar con los datos incluidos**
+
+| Objetivo | Scripts a ejecutar |
+|---|---|
+| Reproducir los mapas y figuras descriptivas | `13_Producto3_mapas.R`, `15_Producto3_graficos.R` |
+| Reconstruir el Producto 1 desde sus archivos fuente | `01` a `09` (ver orden de ejecución) |
+
+**También incluido en `01_Input`:** los resultados de Earth Engine (`NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`), los shapefiles que leen los scripts (límites comunales, parques 2009, 2013 y 2019, establecimientos de salud 2019 y planes reguladores comunales de las 33 comunas) y las proyecciones de población (`INE_población`).
+
+**No incluido**
+- Registros individuales de nacimientos y datos diarios de temperatura y contaminación. Los scripts 10, 11, 16 y 18 los requieren y no pueden ejecutarse desde este repositorio.
+- Vías de OpenStreetMap (demasiado grandes para GitHub). Descargar `chile-latest-free.shp` desde [Geofabrik](https://download.geofabrik.de) y ubicar `gis_osm_roads_free_1.*` en `01_Input/Shapefiles/OSM/`. El resultado ya calculado está en `Producto1/vias_principales_santiago_33.csv`.
+
 ## 📊 Resultados
 
 Los principales resultados, con figuras y tablas numeradas y notas explicativas, están en [`03_Output`](03_Output/README.md): Figuras 1–3 (mapas descriptivos de temperatura superficial, vegetación y superficie impermeable) y Tablas 1–4 (modelos de Cox de todo el embarazo).
-
 
 ## 🌆 ¿Qué es el Ambiente Construido?
 
@@ -227,8 +254,6 @@ A modo de ejemplo, los mapas a continuación ilustran dos dimensiones del entorn
 
 **Cambio en Cobertura de Vegetación (NDVI), 2009–2020**
 ![Comparación NDVI](03_Output/Maps/mapa_ndvi_comparacion_2009_2020.png)
----
-
 
 ## 📁 Estructura del Repositorio
 
@@ -281,25 +306,6 @@ Todas las rutas son relativas a la raíz del proyecto. Abre el archivo `.Rproj` 
 | `14_Ine_poblacion` | Serie de población 2009–2020 | Proyecciones del INE (`ine_totales_rm.csv`, incluido) |
 | `16_Modelo_analisis_modificacion_efecto` | Modelos de Cox, última semana gestacional | Producto 2 + datos diarios de temperatura y contaminación |
 | `18_Modelo_analisis_centrado` | Modelos de Cox, todo el embarazo, exposición centrada | Producto 2 + datos diarios de temperatura y contaminación |
-
-## 📂 Acceso a los Datos
-
-Los datos de análisis de este proyecto son la **base de entorno urbano (Producto 1)**: 33 comunas × 2009–2020, con las variables descritas en el libro de códigos. Está incluida en este repositorio:
-
-- `01_Input/Producto1/producto1_entorno_urbano.csv`: base de entorno urbano.
-- `01_Input/Producto1/diccionario_variables.csv`: diccionario de variables (fuente, cobertura, unidad y notas de cada una).
-
-**Qué se puede ejecutar con los datos incluidos**
-
-| Objetivo | Scripts a ejecutar |
-|---|---|
-| Reproducir los mapas y figuras descriptivas | `13_Producto3_mapas.R`, `15_Producto3_graficos.R` |
-| Reconstruir el Producto 1 desde sus archivos fuente | `01` a `09` (ver orden de ejecución) |
-
-**También incluido en `01_Input`:** los resultados de Earth Engine (`NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`), los shapefiles que leen los scripts (límites comunales, parques 2009, 2013 y 2019, establecimientos de salud 2019 y planes reguladores comunales de las 33 comunas) y las proyecciones de población (`INE_población`).
-
-**No incluido**
-- Vías de OpenStreetMap (demasiado grandes para GitHub). Descargar `chile-latest-free.shp` desde [Geofabrik](https://download.geofabrik.de) y ubicar `gis_osm_roads_free_1.*` en `01_Input/Shapefiles/OSM/`. El resultado ya calculado está en `Producto1/vias_principales_santiago_33.csv`.
 
 ## ⚙️ Requisitos
 
