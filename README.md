@@ -210,7 +210,6 @@ En los nacimientos de la estación relevante, una mayor vegetación debilitó y 
 
 Los principales resultados, con figuras y tablas numeradas y notas explicativas, están en [`03_Output`](03_Output/README.md): Figuras 1–3 (mapas descriptivos de temperatura superficial, vegetación y superficie impermeable) y Tablas 1–4 (modelos de Cox de todo el embarazo).
 
-A modo de ejemplo, los mapas a continuación ilustran dos dimensiones del ambiente construido capturadas en este proyecto: la temperatura superficial, que demuestra el ambiente térmico moldeado por la urbanización y la cobertura de vegetación, un indicador de infraestructura verde.
 
 ## 🌆 ¿Qué es el Ambiente Construido?
 
