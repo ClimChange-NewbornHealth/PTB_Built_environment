@@ -1,17 +1,41 @@
-# Built Environment and Preterm Birth in Santiago, Chile (2009–2020)
+# Built Environment as an Effect Modifier of the Association Between Air Pollution, Temperature, and Preterm Birth in Santiago, Chile
 
 
-**Fondecyt Nº 11240322**: Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth.
+## 💰 Funding
 
-## 👥 Research Team
+**FONDECYT Initiation Research Grant Nº 11240322**: *Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth*. Project funded by the National Agency for Research and Development (ANID) through the FONDECYT Initiation program, and led by Estela Blanco.
 
-📬 **Estela Blanco** (estela.blanco@uc.cl) - **Principal Investigator**
+## 👥 Authors and Contact
 
-📬 **Isidora Vidal** (isidora.vidal@ug.uchile.cl) - **Research Assistant / Geographer**
+📫 **Estela Blanco** ([estela.blanco@uc.cl](mailto:estela.blanco@uc.cl)) - **Principal Investigator**
 
-**Research Collaborators**: José Daniel Conejeros, Ismael Bravo
+📬 **Isidora Vidal** ([isidora.vidal@ug.uchile.cl](mailto:isidora.vidal@ug.uchile.cl)) - **Research Assistant / Geographer - Repository Manager**
+
+📬 **Ismael Bravo** ([ismael.bravo.rodriguez@gmail.com](mailto:ismael.bravo.rodriguez@gmail.com)) - **Research Assistant**
+
+📫 **José Daniel Conejeros** ([jdconejeros@uc.cl](mailto:jdconejeros@uc.cl)) - **Research Collaborator**
 
 ---
+## 📝 Background
+
+Exposure to heat and air pollution during pregnancy has been linked to preterm birth. Whether the urban environment in which a pregnant person lives modifies these associations remains poorly understood in Latin American cities.
+
+## 🎯 Objective
+
+To evaluate whether built environment characteristics modify the association between exposure to temperature and air pollution (PM2.5, NO2 and ozone) during pregnancy and preterm birth in the 33 urban municipalities of the Santiago Metropolitan Region, Chile.
+
+## 🔬 Methods
+
+Cox proportional hazards models in 713,918 births (2010–2020), with exposure averaged over the whole pregnancy and interactions with eight built environment variables classified in terciles by municipality. Models were adjusted for sociodemographic characteristics of the parents, municipal social vulnerability and year of birth.
+
+## 💬 Discussion
+
+In births of the relevant season, greater vegetation weakened and more built surface strengthened the association between exposure and preterm birth, mainly for PM2.5 and NO2. The results are preliminary and exploratory.
+
+## 📊 Results
+
+The main results, with numbered figures and tables and explanatory notes, are in [`03_Output`](03_Output/README.md): Figures 1–3 (descriptive maps of surface temperature, vegetation and impervious surface) and Tables 1–4 (Cox models for the whole pregnancy).
+
 
 ## 🌆 What is the Built Environment?
 
@@ -37,20 +61,6 @@ As an example, the maps below illustrate two dimensions of the built environment
 **Vegetation Cover Change (NDVI), 2009–2020**
 ![NDVI comparison](03_Output/Maps/mapa_ndvi_comparacion_2009_2020.png)
 
-
----
-
-## 🎯 Project Overview
-
-This section corresponds to **Objective 3** of Fondecyt N°11240322: to investigate how built environment characteristics (green space, heat, pollution, social vulnerability) modify the association between extreme heat and preterm birth, across the 33 urban municipalities of the Santiago Metropolitan Region, 2009–2020.
-
-### Current Status
-
-- ✅ Built environment database (Product 1) — complete, 33 municipalities × 2009–2020
-- ✅ Consolidated analytical dataset (Product 2) — merges built environment + births
-- 🔄 Descriptive maps and tables (Product 3) — in progress
-- 🔄 Statistical analysis of effect modification — **in process**
-- ⬜ Full reproducible repository (Product 4) — upcoming
 
 ---
 
@@ -114,20 +124,21 @@ All paths are relative to the project root. Open the `.Rproj` file in RStudio an
 | `16_Modelo_analisis_modificacion_efecto` | Cox models, last gestational week | Product 2 + daily temperature and pollution data |
 | `18_Modelo_analisis_centrado` | Cox models, whole pregnancy, centered exposure | Product 2 + daily temperature and pollution data |
 
-## 📂 Data Availability
+## 📂 Data Access
 
-**Included in `01_Input`:**
-- Urban environment dataset (Product 1), data dictionary and auxiliary CSVs (`Producto1`).
-- Earth Engine exports: `NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`. The models use summer NDVI (December to March); annual NDVI is also included.
-- Shapefiles read by the scripts: commune boundaries, parks 2009, 2013 and 2019, health facilities 2019, and municipal land-use plans of the 33 communes.
-- Population projections (`INE_población`).
+The analysis data of this project is the **urban environment dataset (Product 1)**: 33 municipalities × 2009–2020, with the variables described in the codebook. It is included in this repository:
 
-**Not included:**
-- Individual birth records (DEIS), which are confidential.
-- Daily temperature and air pollution data, and the SOVI and BHT source files (`Data_ANID`), provided by the research team.
-- OpenStreetMap roads (too large for GitHub). Download `chile-latest-free.shp` from [Geofabrik](https://download.geofabrik.de) and place `gis_osm_roads_free_1.*` in `01_Input/Shapefiles/OSM/`. The result, already computed, is in `Producto1/vias_principales_santiago_33.csv`.
+- `01_Input/Producto1/producto1_entorno_urbano.csv`: urban environment dataset.
+- `01_Input/Producto1/diccionario_variables.csv`: data dictionary (source, coverage, unit and notes of each variable).
 
-Scripts 01, 02, 03, 10, 11, 16 and 18 need files that are not included and cannot be run from this repository alone.
+**What can be run with the included data**
+
+| Goal | Scripts to run |
+|---|---|
+| Reproduce the descriptive maps and figures | `13_Producto3_mapas.R`, `15_Producto3_graficos.R` |
+| Rebuild Product 1 from its source files | `01` to `09` (see the execution order) |
+
+**Also included in `01_Input`:** Earth Engine exports (`NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`), the shapefiles read by the scripts (commune boundaries, parks 2009, 2013 and 2019, health facilities 2019 and municipal land-use plans of the 33 communes) and population projections (`INE_población`).
 
 ## ⚙️ Requirements
 
@@ -162,20 +173,44 @@ MIT License. See [LICENSE](LICENSE).
 ---
 ---
 
-# Ambiente Construido y Parto Prematuro en Santiago, Chile (2009–2020)
+# El Ambiente Construido como Modificador de la Asociación entre Contaminación del Aire, Temperatura y Parto Prematuro en Santiago, Chile
 
+## 💰 Financiamiento
 
-**Fondecyt Nº 11240322**: Cambio climático y salud urbana: cómo la contaminación del aire, la temperatura y la estructura de la ciudad se relacionan con el parto prematuro.
+**FONDECYT de Iniciación Nº 11240322**: *Cambio climático y salud urbana: cómo la contaminación del aire, la temperatura y la estructura de la ciudad se relacionan con el parto prematuro*. Proyecto financiado por la Agencia Nacional de Investigación y Desarrollo (ANID) a través del programa FONDECYT de Iniciación, y liderado por Estela Blanco.
 
-## 👥 Equipo de Investigación
+## 👥 Autores y Contacto
 
-📬 **Estela Blanco** (estela.blanco@uc.cl) - **Investigadora Principal**
+📫 **Estela Blanco** ([estela.blanco@uc.cl](mailto:estela.blanco@uc.cl)) - **Investigadora Principal**
 
-📬 **Isidora Vidal** (isidora.vidal@ug.uchile.cl) - **Asistente de Investigación / Geógrafa**
+📬 **Isidora Vidal** ([isidora.vidal@ug.uchile.cl](mailto:isidora.vidal@ug.uchile.cl)) - **Asistente de Investigación / Geógrafa - Mantenedora del Repositorio**
 
-**Colaboradores de Investigación**: José Daniel Conejeros, Ismael Bravo
+📬 **Ismael Bravo** ([ismael.bravo.rodriguez@gmail.com](mailto:ismael.bravo.rodriguez@gmail.com)) - **Asistente de Investigación**
+
+📫 **José Daniel Conejeros** ([jdconejeros@uc.cl](mailto:jdconejeros@uc.cl)) - **Colaborador de Investigación**
 
 ---
+## 📝 Antecedentes
+
+La exposición a calor y a contaminación del aire durante el embarazo se ha asociado al parto prematuro. Aún se conoce poco si el entorno urbano en que vive la gestante modifica estas asociaciones en ciudades de América Latina.
+
+## 🎯 Objetivo
+
+Evaluar si las características del ambiente construido modifican la asociación entre la exposición a temperatura y a contaminación del aire (PM2.5, NO2 y ozono) durante el embarazo y el parto prematuro, en las 33 comunas urbanas de la Región Metropolitana de Santiago, Chile.
+
+## 🔬 Métodos
+
+Modelos de riesgos proporcionales de Cox en 713.918 nacimientos (2010–2020), con la exposición promediada durante todo el embarazo e interacciones con ocho variables del ambiente construido clasificadas en terciles por comuna. Los modelos se ajustaron por características sociodemográficas de los padres, vulnerabilidad social de la comuna y año de nacimiento.
+
+## 💬 Discusión
+
+En los nacimientos de la estación relevante, una mayor vegetación debilitó y una mayor superficie construida reforzó la asociación entre la exposición y el parto prematuro, sobre todo para PM2.5 y NO2. Los resultados son preliminares y exploratorios.
+
+## 📊 Resultados
+
+Los principales resultados, con figuras y tablas numeradas y notas explicativas, están en [`03_Output`](03_Output/README.md): Figuras 1–3 (mapas descriptivos de temperatura superficial, vegetación y superficie impermeable) y Tablas 1–4 (modelos de Cox de todo el embarazo).
+
+A modo de ejemplo, los mapas a continuación ilustran dos dimensiones del ambiente construido capturadas en este proyecto: la temperatura superficial, que demuestra el ambiente térmico moldeado por la urbanización y la cobertura de vegetación, un indicador de infraestructura verde.
 
 ## 🌆 ¿Qué es el Ambiente Construido?
 
@@ -191,9 +226,7 @@ Habitualmente se describe a través de un conjunto de componentes interrelaciona
 
 Estos componentes no actúan de forma aislada. En conjunto, dan forma a las condiciones cotidianas en las que vive la población y cada vez más evidencia muestra que **el lugar donde habitamos tiene consecuencias directas sobre nuestra salud**, independientemente del comportamiento individual o la genética. La exposición a calor, contaminación o falta de áreas verdes durante el embarazo, en particular, se ha asociado a resultados adversos del nacimiento como el parto prematuro.
 
-Este repositorio se enfoca en caracterizar el ambiente construido de las **33 comunas urbanas de la Región Metropolitana de Santiago**, Chile, identificando las variables que describen cómo está construida, cuánto verde tiene y cómo se estructura cada comuna como primer paso para entender si estas características modifican la relación entre el calor extremo y el parto prematuro.
-
-A modo de ejemplo, los mapas a continuación ilustran dos dimensiones del ambiente construido capturadas en este proyecto: la temperatura superficial, que demuestra el ambiente térmico moldeado por la urbanización y la cobertura de vegetación, un indicador de infraestructura verde.
+A modo de ejemplo, los mapas a continuación ilustran dos dimensiones del entorno construido registradas en este proyecto: la temperatura superficial, que refleja el entorno térmico moldeado por la urbanización, y la cobertura vegetal, un indicador clave de la infraestructura verde.
 
 **Cambio en Temperatura Superficial (verano), 2009–2020**
 ![Comparación LST](03_Output/Maps/mapa_lst_comparacion_2009_2020.png)
@@ -202,19 +235,6 @@ A modo de ejemplo, los mapas a continuación ilustran dos dimensiones del ambien
 ![Comparación NDVI](03_Output/Maps/mapa_ndvi_comparacion_2009_2020.png)
 ---
 
-## 🎯 Descripción del Proyecto
-
-Esta sección corresponde al **Objetivo 3** del FONDECYT N°11240322: investigar cómo las características del ambiente construido (áreas verdes, calor, contaminación, vulnerabilidad social) modifican la asociación entre calor extremo y parto prematuro, en las 33 comunas urbanas de la Región Metropolitana de Santiago, período 2009-2020.
-
-### Estado Actual
-
-- ✅ Base de datos de ambiente construido (Producto 1) — completa, 33 comunas × 2009-2020
-- ✅ Base analítica consolidada (Producto 2) — integra ambiente construido + nacimientos
-- 🔄 Mapas y tablas descriptivas (Producto 3) — en curso
-- 🔄 Análisis estadístico de modificación de efecto — **en proceso**
-- ⬜ Repositorio reproducible completo (Producto 4) — próximamente
-
----
 
 ## 📁 Estructura del Repositorio
 
@@ -276,20 +296,24 @@ Todas las rutas son relativas a la raíz del proyecto. Abre el archivo `.Rproj` 
 | `16_Modelo_analisis_modificacion_efecto` | Modelos de Cox, última semana gestacional | Producto 2 + datos diarios de temperatura y contaminación |
 | `18_Modelo_analisis_centrado` | Modelos de Cox, todo el embarazo, exposición centrada | Producto 2 + datos diarios de temperatura y contaminación |
 
-## 📂 Disponibilidad de Datos
+## 📂 Acceso a los Datos
 
-**Incluido en `01_Input`:**
-- Base de entorno urbano (Producto 1), diccionario de variables y CSV auxiliares (`Producto1`).
-- Resultados de Earth Engine: `NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`. Los modelos usan el NDVI de verano (diciembre a marzo); también se incluye el NDVI anual.
-- Shapefiles que leen los scripts: límites comunales, parques 2009, 2013 y 2019, establecimientos de salud 2019 y planes reguladores comunales de las 33 comunas.
-- Proyecciones de población (`INE_población`).
+Los datos de análisis de este proyecto son la **base de entorno urbano (Producto 1)**: 33 comunas × 2009–2020, con las variables descritas en el libro de códigos. Está incluida en este repositorio:
 
-**No incluido:**
-- Registros individuales de nacimientos (DEIS), que son confidenciales.
-- Datos diarios de temperatura y contaminación, y archivos fuente del SOVI y el BHT (`Data_ANID`), entregados por el equipo de investigación.
+- `01_Input/Producto1/producto1_entorno_urbano.csv`: base de entorno urbano.
+- `01_Input/Producto1/diccionario_variables.csv`: diccionario de variables (fuente, cobertura, unidad y notas de cada una).
+
+**Qué se puede ejecutar con los datos incluidos**
+
+| Objetivo | Scripts a ejecutar |
+|---|---|
+| Reproducir los mapas y figuras descriptivas | `13_Producto3_mapas.R`, `15_Producto3_graficos.R` |
+| Reconstruir el Producto 1 desde sus archivos fuente | `01` a `09` (ver orden de ejecución) |
+
+**También incluido en `01_Input`:** los resultados de Earth Engine (`NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`), los shapefiles que leen los scripts (límites comunales, parques 2009, 2013 y 2019, establecimientos de salud 2019 y planes reguladores comunales de las 33 comunas) y las proyecciones de población (`INE_población`).
+
+**No incluido**
 - Vías de OpenStreetMap (demasiado grandes para GitHub). Descargar `chile-latest-free.shp` desde [Geofabrik](https://download.geofabrik.de) y ubicar `gis_osm_roads_free_1.*` en `01_Input/Shapefiles/OSM/`. El resultado ya calculado está en `Producto1/vias_principales_santiago_33.csv`.
-
-Los scripts 01, 02, 03, 10, 11, 16 y 18 requieren archivos que no están incluidos y no pueden ejecutarse solo con este repositorio.
 
 ## ⚙️ Requisitos
 
