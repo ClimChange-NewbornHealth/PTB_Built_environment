@@ -68,14 +68,6 @@ As an example, the maps below illustrate two dimensions of the built environment
 
 ```
 PTB_Built_environment/
-├── 01_Input/          # Datos de ambiente construido y base analítica
-├── 02_Code/            # Scripts de procesamiento y análisis
-├── 03_Output/          # Mapas, tablas y figuras
-└── README.md
-```
-
-```
-PTB_Built_environment/
 ├── PTB_Built_environment.Rproj   # open this file first in RStudio
 ├── 01_Input/
 │   ├── Producto1/                # urban environment dataset, data dictionary and auxiliary CSVs
@@ -139,6 +131,9 @@ The analysis data of this project is the **urban environment dataset (Product 1)
 | Rebuild Product 1 from its source files | `01` to `09` (see the execution order) |
 
 **Also included in `01_Input`:** Earth Engine exports (`NDVI`, `LST`, `Cobertura_Arborea`, `Impervious`), the shapefiles read by the scripts (commune boundaries, parks 2009, 2013 and 2019, health facilities 2019 and municipal land-use plans of the 33 communes) and population projections (`INE_población`).
+
+**Not included**
+- OpenStreetMap roads (too large for GitHub). Download `chile-latest-free.shp` from [Geofabrik](https://download.geofabrik.de) and place `gis_osm_roads_free_1.*` in `01_Input/Shapefiles/OSM/`. The result, already computed, is in `Producto1/vias_principales_santiago_33.csv`.
 
 ## ⚙️ Requirements
 
@@ -236,14 +231,6 @@ A modo de ejemplo, los mapas a continuación ilustran dos dimensiones del entorn
 
 
 ## 📁 Estructura del Repositorio
-
-```
-PTB_Built_environment/
-├── 01_Input/ # Datos de ambiente construido y base analítica
-├── 02_Code/ # Scripts de procesamiento y análisis
-├── 03_Output/ # Mapas, tablas y figuras
-└── README.md
-```
 
 ```
 PTB_Built_environment/
